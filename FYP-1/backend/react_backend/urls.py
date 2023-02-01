@@ -19,7 +19,6 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     re_path(r'^api/players/$', views.players_list),
     re_path(r'^api/players/([0-9])$', views.players_detail),
 
