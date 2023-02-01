@@ -8,6 +8,12 @@ from rest_framework import status
 from .models import Player
 from .serializers import PlayerSerializer
 
+
+
+
+
+
+
 @api_view(['GET', 'POST'])
 def players_list(request):
     if request.method == 'GET':
@@ -24,6 +30,7 @@ def players_list(request):
             return Response(status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 
 @api_view(['PUT', 'DELETE'])

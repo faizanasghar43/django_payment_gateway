@@ -5,4 +5,4 @@ class PlayerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Player
-        fields = ('pk', 'name', 'balls_count', 'middled', 'edged','missed')
+        fields = '__all__'
