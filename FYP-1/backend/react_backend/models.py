@@ -1,9 +1,8 @@
 from django.db import models
 
-class Player_info(models.Model):
+class Player(models.Model):
     name = models.CharField("Name", max_length=240)
-    date = models.DateTimeField("Date")
-    videofile = models.FileField(upload_to='videos/', null=True, verbose_name="")
+    balls_count = models.IntegerField("Balls")
     middled_count = models.IntegerField("Middled")
     edged_count = models.IntegerField("Edged")
     missed_count = models.IntegerField("Missed")
