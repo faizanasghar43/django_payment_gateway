@@ -22,3 +22,7 @@ urlpatterns = [
     path('', include('react_backend.urls')),
 
 ]
+
+# next-task
+# 100 frames with bounding boxes , organize em with meta-data.
+# CLASSIFICATION of edge, missed, middle.
